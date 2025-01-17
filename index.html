@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>yoyfab</title>
+    <link rel="icon" href="images/title.png" type="image/icon type">
+    <script src="https://kit.fontawesome.com/d7572cbe19.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/icons.png" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <style>
+        .hero-text > span {
+            animation: fade 1.5s ease-in-out forwards;
+        }
+        @keyframes fade {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+        @keyframes appear {
+            from {
+            opacity: 0;
+            scale: 0.5;
+            clip-path: inset(100% 100% 0 0);
+            }
+            to {
+            opacity: 1;
+            scale: 1;
+            clip-path: inset(0 0 0 0);
+            }
+        }
+    
+        .container-about,.work_section, .lets_talk {
+            animation: appear linear;
+            animation-timeline: view();
+            animation-range: entry 0% cover 10%;
+        }
+    </style>
+</head>
+<body>
+    <!-- nav -->
+    <nav class="navbar">
+        <h1 class="text-logo">yoy<span class="info">fab</span><span class="dot">.</span></h1>
+        <ul class="navbar-ul">
+            <li><a href="#about-h1">About</a></li>
+            <li><a href="#work_section_link">Works</a></li>
+            <li><a href="#lets_talk" class="lets">Let's Talk</a></li>
+        </ul>
+        <div class="container-menu">
+            <i class="fa-solid fa-bars" id="menuIcon"></i> 
+        </div>
+        <!-- Mobile menu -->
+        <div class="mobile-menu" id="mobileMenu">
+            <ul class="mobile-menu-ul">
+                <li><a href="#about-h1">About</a></li>
+                <li><a href="#work_section_link">Works</a></li>
+                <li><a href="#lets_talk">Let's Talk</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- hero section -->
+    <div class="hero-h1">
+        <h1 class="hero-text"><span id="helloText">HELLO</span><span id="dot">,</span> MY NAME IS <span class="hero-highlights">FLORANTE FABROA JR.</span> WEB DEVELOPER AND GRAPHICS DESIGNER BASED IN POLA, PHILIPPINES</h1>
+        <div class="hero-button"></div>
+    </div>
+    <!-- about -->
+    <div class="container-about">
+        <div id="resume-button">
+            <a href="https://yoyfab.site/files/resume.pdf" target="_blank" rel="noopener noreferrer" id="resume">Resume</a>
+        </div>
+        <div class="about-yoy">
+            <h1 id="about-h1">Hi! / <i>About Yoy</i></h1>
+            <p class="about-info" id="about_text">I'm Florante C. Fabroa,or you can just call me "yoy?".Motivated Computer Science graduate seeking an entry-level position to leverage technical skills in a
+                dynamic team environment. Specializing in web development and graphics designing, I am eager to contribute to
+                meaningful projects, embrace new challenges, and further develop my expertise within a professional
+                setting.Your style, my code.
+            </p>
+            <div class="icons">
+                <a href="https://www.linkedin.com/in/florantejr/" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-github" id="github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/florantejr/" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-linkedin" id="linkedin"></i>
+                </a>
+            </div>
+        </div>
+        <!-- about image-->
+        <div class="yoy-pic">
+            <img src="images/yoy.jpg" class="yoy-pic-info" alt="">
+        </div>
+    </div>
+    <!-- work section-->
+    <div class="work_section">
+        <h1 class="work_h1" id="work_section_link">Works</h1>
+        <div class="work_section_body">
+            <!-- work section 1-->
+            <div class="work_section_card">
+                <div class="work_section_card_img">
+                    <img src="images/rizal.png" class="rizal_pic" alt="">
+                </div>
+                <div class="work_section_card_text">
+                    <h1 class="work_section_card_h1">Life of Rizal Website</h1>
+                    <p class="rizal_info">
+                        Welcome to "Life of Rizal," an engaging and beautifully designed website dedicated to exploring the extraordinary life and legacy of Dr. José Rizal, the national hero of the Philippines. Crafted meticulously using HTML and CSS, this site serves as a comprehensive resource for anyone interested in Rizal's contributions to literature, politics, and social reforms.
+                    </p>
+                </div> 
+                <div class="work_section_card_button">
+                    <a href="https://github.com/yoyford/rizal" target="_blank">
+                        <button type="button" class="work_section_card_btn">View Code</button>
+                    </a>
+                    <a href="https://yoyford.github.io/rizal/" target="_blank">
+                        <button type="button" class="work_section_card_btn" id="live_green">Live Preview</button>
+                    </a>
+                </div>   
+            </div>
+            <!-- work section 2-->
+            <div class="work_section_card_2">
+                <div class="work_section_card_img">
+                    <img src="images/personal.png" class="rizal_pic" id="personal" alt="">
+                </div>
+                <div class="work_section_card_text">
+                    <h1 class="work_section_card_h1">Personal Portfolio</h1>
+                    <p class="personal_info">
+                        Welcome to my "Personal Portfolio" website, a showcase of my skills, projects, and creative journey, meticulously crafted using HTML,CSS and little bit JS. This platform serves as a digital reflection of my professional identity, designed to highlight my expertise and unique approach to various fields.
+                    </p>
+                </div> 
+                <div class="work_section_card_button">
+                    <a href="https://github.com/yoyford/yoy-port-2024" target="_blank">
+                        <button type="button" class="work_section_card_btn">View Code</button>
+                    </a>
+                    <a href="https://www.yoyfab.site/" target="_blank">
+                        <button type="button" class="work_section_card_btn" id="live_green">Live Preview</button>
+                    </a>
+                </div>   
+            </div>
+            <!-- work section 3-->
+            <div class="work_section_card_2">
+                <div class="work_section_card_img">
+                    <img src="images/linktree.png" class="rizal_pic" id="personal" alt="">
+                </div>
+                <div class="work_section_card_text">
+                    <h1 class="work_section_card_h1">Link Hub</h1>
+                    <p class="personal_info">
+                        Welcome to "My Links Hub," an elegant and user-friendly webpage designed to consolidate and share important links that reflect your personal and professional interests. Meticulously crafted using HTML and CSS, this site functions as a versatile platform for showcasing your online presence, including social media profiles, portfolios, and relevant resources.
+                    </p>
+                </div> 
+                <div class="work_section_card_button">
+                    <a href="https://github.com/yoyford/linktree-clone" target="_blank">
+                        <button type="button" class="work_section_card_btn">View Code</button>
+                    </a>
+                    <a href="https://www.yoytrades.site/" target="_blank">
+                        <button type="button" class="work_section_card_btn" id="live_green">Live Preview</button>
+                    </a>
+                </div>   
+            </div>
+        </div>
+        <section id="graphics-section">
+            <h1 class="work_h1" id="work_section_link">Graphics Works</h1>
+                <div class="work_section_body">
+                    <div class="work_section_card">
+                        <div class="work_section_card_img">
+                            <img src="images/pizza clean.jpg" class="rizal_pic" alt="">
+                        </div>
+                        <div class="work_section_card_text">
+                            <h1 class="work_section_card_h1">Pizza Poster Design</h1>
+                            <div class="rizal_info">
+                                <h5>Made with Photoshop </h5>
+                                <img src="/images/photoshop.png" alt="photoshop" id="photoshop">
+                            </div>
+                        </div>
+                        <div class="graphics_section_card_button">
+                            <a href="/images/pizza clean.jpg" target="_blank">
+                                <button type="button" class="work_section_card_btn">View Full Image</button>
+                            </a> 
+                        </div>    
+                    </div>
+                    <!-- graphics section 2-->
+                    <div class="work_section_card">
+                        <div class="work_section_card_img">
+                            <img src="images/cosmetics.jpg" class="rizal_pic" alt="">
+                        </div>
+                        <div class="work_section_card_text">
+                            <h1 class="work_section_card_h1">Cosmetics Poster Design</h1>
+                            <div class="rizal_info">
+                                <h5>Made with Photoshop </h5>
+                                <img src="/images/photoshop.png" alt="photoshop" id="photoshop">
+                            </div>
+                        </div> 
+                        <div class="graphics_section_card_button">
+                            <a href="http://127.0.0.1:5501/images/cosmetics.jpg" target="_blank">
+                                <button type="button" class="work_section_card_btn">View Full Image</button>
+                            </a> 
+                        </div>    
+                    </div>
+                </div>
+        </section>
+    </div>
+    <!-- Lets Talk section-->
+    <div class="lets_talk" id="lets_talk">
+        <div class="lets_talk_card">
+            <h1 id="lets_talk_h1">Let's Talk</h1>
+            <div class="lets_talk_card_padding">
+                <form id="contactForm">
+                    <div class="row_1">
+                        <input type="text" class="input_1" id="name" placeholder="First name" required>
+                        <input type="text" class="input_1" id="last" placeholder="Last name" required>
+                    </div>
+                    <div class="row_2">
+                        <input type="email" class="input_2" id="email" placeholder="Email" required>
+                    </div>
+                    <div class="row_3">
+                        <input type="text" class="input_3" id="message" placeholder="Message" required>
+                    </div>
+                    <div class="row_4">
+                        <button type="submit" class="submit" id="submit">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="lets_talk_card_2">
+            <div class="lets_talk_card_padding_2">
+                <div class="lets_talk_card_info">
+                    <h1 class="lets_talk_card_h1">Thank you for visiting my portfolio. I'll get back to you as soon as possible.</h1>
+                </div>
+            </div>
+        </div>    
+    </div> 
+    <script src="script.js"></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+    <script type="text/javascript">
+        emailjs.init('5x_qqKvKTErkS65kA')
+    </script>
+    <!-- footer section--> 
+    <div class="footer">
+        <h1 class="footer_h1">Made by Florante C. Fabroa Jr.</h1>
+        <h1 class="footer_h1">© 2025</h1>
+        <h1 class="footer_h1">All rights reserved.</h1>
+    </div>
+</body> 
+</html>
