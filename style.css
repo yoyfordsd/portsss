@@ -267,7 +267,7 @@ body {
 .container-about{
     position: relative;
     border-radius: 40px;
-    padding: 2rem 2rem;
+    padding: 2rem 1rem;
     max-width: 1240px;
     margin: 0 auto;
     display: flex;
