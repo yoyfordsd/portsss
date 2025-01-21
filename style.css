@@ -699,6 +699,7 @@ body {
     padding: 0.5rem;
     border: none;
     outline: none;
+    font-family: var(--main-font);
 
 }
 .row_2{
@@ -710,6 +711,7 @@ body {
     border: none;
     outline: none;
     width: 100%;
+    font-family: var(--main-font);
 }
 .row_3{
     margin-top: 16px;
@@ -717,6 +719,7 @@ body {
 
 }
 .row_3 input{
+    font-family: var(--main-font);
     border: none;
     padding: 0.5rem;
     outline: none;
