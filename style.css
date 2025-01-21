@@ -699,7 +699,6 @@ body {
 .row_1 input{
     padding: 0.5rem;
     border: none;
-    border-bottom: 1px solid #c5c5c5;
     outline: none;
 
 }
@@ -710,38 +709,40 @@ body {
 .row_2 input{
     padding: 0.5rem;
     border: none;
-    border-bottom: 1px solid #c5c5c5;
     outline: none;
     width: 100%;
 }
 .row_3{
     margin-top: 16px;
-    height: 240px;
-    border-bottom: 1px solid #c5c5c5;
+ 
+
 }
 .row_3 input{
     border: none;
     padding: 0.5rem;
     outline: none;
     width: 100%;
+    background-color: #ffffff;
+    height: 20vh;
 
 }
 .row_4{
     margin-top: 16px;
 }
 .row_4 button{
-    padding: 15px 15px;
     cursor: pointer;
-    background-color: #263238;
-    border: none;
-    color: #ffffff;
+    color: #fdfdfd;
+    background-color: #333333;
+    border: .0625rem solid rgb(255, 255, 255);
+    padding: .75rem 1.2rem;
+    border-radius: 3.75rem;
     transition: 0.4s ease-in-out;
     margin-right: 16px;
     text-decoration: none;
     transition: 0.2s ease-in-out;
 }
 .row_4 button:hover{
-    background-color: rgb(177, 177, 177);
+    background-color: #f59999
 }
 .lets_talk_card_2{
     display: flex;
