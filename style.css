@@ -467,6 +467,9 @@ body {
     font-size: 1rem;
     width: 80%;
 }
+.work-section-number h3{
+    font-weight: 300;
+}
 #rizalll{
     width: 100%;
 }
