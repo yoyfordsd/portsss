@@ -449,11 +449,11 @@ body {
     justify-content: center;
     align-items: center;
 }
-.work-section-image-personal{
-    width: 100%;
-    object-fit: cover;
-}
+
 .work-section-image-links{
+    width: 100%;
+}
+.work-section-image{
     width: 100%;
 }
 .work-section-information{
@@ -473,12 +473,8 @@ body {
 #rizalll{
     width: 100%;
 }
-#personal{
-    width: 100%;
-
-}
-#linktree{
-    width: 100%;
+.work-section-image-personal{
+    width: 80%;
 }
 .works-h1{
     font-size: 2rem;
@@ -863,8 +859,9 @@ body {
     .work-section-card-hori{
         display: flex;
         align-items: flex-start;
-
-
+    }
+    .work-section-image-personal{
+        width: 100%;
     }
     .yoy-pic{
         display: none;
@@ -1061,6 +1058,13 @@ body {
 @media screen and (max-width: 475px) {
     .work_section_card_img{
         width: 100%;
+    }
+    .work-section-card-hori {
+        display: flex;
+        gap: 0.5rem;
+    }
+    .work-section-number h3{
+        font-weight: 200;
     }
 }
 @media screen and (max-width: 364px) {
