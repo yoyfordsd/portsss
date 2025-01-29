@@ -5,6 +5,10 @@
     { code: 'es', text: "HOLA, MI NOMBRE ES FLORANTE FABROA JR. DESARROLLADOR WEB CON BASE EN POLA, FILIPINAS" },
     { code: 'fr', text: "BONJOUR, MON NOM EST FLORANTE FABROA JR. DÉVELOPPEUR WEB BASÉ À POLA, PHILIPPINES" },
     { code: 'jp', text: "こんにちは, MON NOM EST FLORANTE FABROA JR. DÉVELOPPEUR WEB BASÉ À POLA, PHILIPPINES" },
+    { code: 'ko', text: "안녕하세요, 제 이름은 플로란트 파브로아 주니어입니다. 필리핀 폴라에 기반한 웹 개발자입니다." },
+    { code: 'de', text: "HALLO, MEIN NAME IST FLORANTE FABROA JR. WEBENTWICKLER MIT SITZ IN POLA, PHILIPPINEN" }, // German translation
+    { code: 'it', text: "CIAO, IL MIO NOME È FLORANTE FABROA JR. SVILUPPATORE WEB CON SEDE A POLA, FILIPPINE" }, // Italian translation
+    { code: 'ru', text: "ПРИВЕТ, МЕНЯ ЗОВУТ ФЛОРАНТЕ ФАБРОА МЛ. ВЕБ-РАЗРАБОТЧИК, ОСНОВАННЫЙ В ПОЛА, ФИЛИППИНЫ" }, // Russian translation
 ];
 let currentIndex = 0;
 function changeHelloText() {
@@ -68,4 +72,33 @@ document.getElementById('contactForm').addEventListener('submit', function(event
         alert('Failed to send the message. Please try again later.');
         console.error('Error:', error);
     });
+    
 });
+
+/*
+ JS to toggle scroll axis styles
+*/
+const control = document.getElementById("direction-toggle");
+const marquees = document.querySelectorAll(".marquee");
+const wrapper = document.querySelector(".wrapper");
+
+control.addEventListener("click", () => {
+  control.classList.toggle("toggle--vertical");
+  wrapper.classList.toggle("wrapper--vertical");
+  [...marquees].forEach((marquee) =>
+    marquee.classList.toggle("marquee--vertical")
+  );
+});
+const sections = document.querySelectorAll('body');
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.2 });
+
+    sections.forEach(section => {
+      observer.observe(section);
+    });
