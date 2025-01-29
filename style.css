@@ -1003,13 +1003,13 @@ body {
         
     }
     .mobile-menu {
-        transition: max-height 0.5s ease-in-out;
-    }
-    
-    .mobile-menu.active {
-        max-height: 200px;
-    }
-    
+    transition: max-height 0.5s ease-in-out;
+}
+
+.mobile-menu.active {
+    max-height: 200px;
+}
+
     .footer h1{
         font-size: 14px;
     }
