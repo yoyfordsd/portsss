@@ -5,6 +5,54 @@
     font-family: "custom1";
     src: url(/fonts2/HelveticaNeueCyr\ Light.ttf);
 }
+.hero-text span {
+    display: inline-block;
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+.yoy-pic-info {
+    animation: float 3s ease-in-out infinite;
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.about-yoy {
+    animation: fadeIn 1.5s ease-in-out;
+}
+.yoy-pic {
+    position: relative;
+    transform: translateY(0);
+    transition: transform 0.3s ease-out;
+}
+
+.container-about:hover .yoy-pic {
+    transform: translateY(-10px);
+}
+.icons a {
+    transition: all 0.3s ease;
+}
+
+.icons a:hover {
+    filter: drop-shadow(0 0 8px rgba(245, 153, 153, 0.8));
+    transform: scale(1.1);
+}
+
 :root{
     --main-color: white;
     --main-font: "Poppins", sans-serif; 
@@ -100,7 +148,6 @@ html {
 }
 section {
     animation: fadeIn 1s ease-in-out;
-
 }
 * {
     margin: 0;
@@ -601,19 +648,7 @@ body {
    
     
 }
-.hero-text span {
-    display: inline-block;
-    animation: float 3s ease-in-out infinite;
-}
 
-@keyframes float {
-    0%, 100% {
-        transform: translateY(0);
-    }
-    50% {
-        transform: translateY(-10px);
-    }
-}
 #pizzas{
     width: 100%;
     border-radius: 30px;
@@ -841,7 +876,9 @@ body {
     transition: background-color 0.5s ease;
 }
 
-
+.footer:hover {
+    background-color: #f59999;
+}
 @media screen and (max-width: 974px) {
     .hero-text {
         font-size: 55px;
@@ -1002,14 +1039,6 @@ body {
         margin-left: 30px;
         
     }
-    .mobile-menu {
-    transition: max-height 0.5s ease-in-out;
-}
-
-.mobile-menu.active {
-    max-height: 200px;
-}
-
     .footer h1{
         font-size: 14px;
     }
