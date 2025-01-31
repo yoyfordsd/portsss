@@ -618,13 +618,13 @@ body {
     font-weight: 250;
 }
 .graphs-info a{
-    font-size: 16px;
+    font-size: 14px;
     text-decoration: none;
     color: rgb(0, 0, 0);
     font-weight: 200;
 
     border-bottom: 1px solid #19191b;
-    width: 130px;
+    width: 110px;
     transition: ease-in-out 0.3s;
 }
 .graphs-info a:hover{
