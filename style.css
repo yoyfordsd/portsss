@@ -1,325 +1,1195 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <title>yoyfab</title>
-    <link rel="icon" href="images/title.png" type="image/icon type">
-    <script src="https://kit.fontawesome.com/d7572cbe19.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="images/icons.png" type="image/x-icon">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-    <style>
-        .hero-text > span {
-            animation: fade 1.5s ease-in-out forwards;
-        }
-        @keyframes fade {
-            0% {
-                opacity: 0;
-            }
-            100% {
-                opacity: 1;
-            }
-        }
-        @keyframes appear {
-            from {
-            opacity: 0;
-            scale: 0.5;
-            clip-path: inset(100% 100% 0 0);
-            }
-            to {
-            opacity: 1;
-            scale: 1;
-            clip-path: inset(0 0 0 0);
-            }
-        }
-        .container-about,.work_section, .lets_talk {
-            animation: appear linear;
-            animation-timeline: view();
-            animation-range: entry 0% cover 10%;
-        }
-        @keyframes fadeIn {
-        from {
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@font-face{
+    font-family: "custom1";
+    src: url(/fonts2/HelveticaNeueCyr\ Light.ttf);
+}
+.hero-text span {
+    display: inline-block;
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+.yoy-pic-info {
+    animation: float 3s ease-in-out infinite;
+}
+@keyframes fadeIn {
+    from {
         opacity: 0;
         transform: translateY(20px);
-        }
-        to  {
+    }
+    to {
         opacity: 1;
         transform: translateY(0);
-            }
-        }
+    }
+}
 
-    </style>
-</head>
-<section class="white-back">
-    <!-- nav -->
-    <nav class="navbar">
-        <h1 class="text-logo">yoy<span class="info">fab</span><span class="dot">.</span></h1>
-        <ul class="navbar-ul">
-            <li><a href="#work_section_link">ABOUT</a></li>
-            <li><a href="#work_section_link_2">WORKS</a></li>
-            <li><a href="#lets_talk" class="lets">LET'S TALK</a></li>
-        </ul>
-        <div class="container-menu">
-            <i class="fa-solid fa-bars" id="menuIcon"></i> 
-        </div>
-        <!-- Mobile menu -->
-        <div class="mobile-menu" id="mobileMenu">
-            <ul class="mobile-menu-ul">
-                <li><a href="#about-h1">About</a></li>
-                <li><a href="#work_section_link">Works</a></li>
-                <li><a href="#lets_talk">Let's Talk</a></li>
-            </ul>
-        </div>
-    </nav>
-    <!-- hero section -->
-    <div class="hero-h1">
-        <h1 class="hero-text"><span id="helloText">HELLO</span><span id="dot">,</span> MY NAME IS <span class="hero-highlights">FLORANTE FABROA JR.</span> <span class="hero-highlights-blue">WEB DESIGNER</span> AND  <span class="hero-highlights-yellow">GRAPHICS DESIGNER</span> BASED IN POLA, PHILIPPINES</h1>
-        <div class="hero-button"></div>
-    </div>
-</section>   
-    <!-- about -->
-    <div class="container-about">
-        <div class="resume-info">
-            <div id="resume-button">
-                <a href="https://portsss-lalalabs-projects.vercel.app/files/resume.pdf/" target="_blank" rel="noopener noreferrer">Resume</a>
-            </div>
-            <div class="about-yoy">
-                <h3 class="work_h3" id="work_section_link">hi</h3>
-                <h1 class="work_h1" id="work_section_link">About Yoy</h1>
-                <p class="about-info" id="about_text">I'm Florante C. Fabroa,or you can just call me "yoy?".Motivated Computer Science graduate seeking an entry-level position to leverage technical skills in a
-                    dynamic team environment. Specializing in web development and graphics designing,I am particularly excited about the opportunity to contribute to meaningful projects that have a positive impact on users and communities. I thrive in collaborative settings where I can share ideas, learn from others, and embrace new challenges. My goal is to further develop my expertise in a professional setting, continuously improving my skills while contributing to the success of the team.Your style, my code.
-                </p>
-                <div class="icons">
-                    <a href="https://www.linkedin.com/in/florantejr/" target="_blank" rel="noopener noreferrer">
-                        <i class="fab fa-github" id="github"></i>
-                    </a>
-                    <a href="https://www.linkedin.com/in/florantejr/" target="_blank" rel="noopener noreferrer">
-                        <i class="fa-brands fa-linkedin" id="linkedin"></i>
-                    </a>
-                </div>
-            </div>
-        </div>
-        <!-- about image-->
-        <div class="yoy-pic">
-            <img src="images/yoy.png" class="yoy-pic-info" alt="">
-        </div>
-    </div>
-    <section class="marquee">
-        <div class="scroll">
-          <div>
-            <h3 class="category">HTML</h3>
-            <h3 class="category">CSS</h3>
-            <h3 class="category">JAVASCRIPT</h3>
-            <h3 class="category">ADOBE PHOTOSHOP</h3>
-            <h3 class="category">ADOBE ILLUSTRATOR</h3>
-            <h3 class="category">FIGMA</h3>
-            <h3 class="category">FRAMER</h3>
-            <h3 class="category">GIT</h3>
-            <h3 class="category">GITHUB</h3>
-          </div>
-          <!--Second equal div to ensure continuity of marquee-->
-          <div>
-            <h3 class="category">HTML</h3>
-            <h3 class="category">CSS</h3>
-            <h3 class="category">JAVASCRIPT</h3>
-            <h3 class="category">ADOBE PHOTOSHOP</h3>
-            <h3 class="category">ADOBE ILLUSTRATOR</h3>
-            <h3 class="category">FIGMA</h3>
-            <h3 class="category">FRAMER</h3>
-            <h3 class="category">GIT</h3>
-            <h3 class="category">GITHUB</h3>
-          </div>
-        </div>
-      </section>
-    <!-- work section-->
-    <section class="work_section">
-        <h3 class="work_h3" id="work_section_link_2">finished website</h3>
-        <h1 class="work_h1" id="work_section_link">Works</h1>
-        <div class="work-section-body">
-            <div class="work-section-card-hori">
-                <div class="work-section-card-hori-res">
-                    <div class="work-section-image">
-                        <img src="/images/rizal.png" alt="rizal-pic" id="rizalll">
-                    </div>
-                    <div class="work-section-information">
-                            <h1 class="works-h1">Life of Rizal</h1>
-                            <p>Welcome to "Life of Rizal," an engaging and beautifully designed website dedicated to exploring the extraordinary life and legacy of Dr. José Rizal, the national hero of the Philippines. Crafted meticulously using HTML and CSS, this site serves as a comprehensive resource for anyone interested in Rizal's contributions to literature, politics, and social reforms.
-                            </p>
-                        <div class="work-section-buttons">
-                            <a href="https://yoyford.github.io/rizal/" target="_blank">
-                                Visit Website
-                            </a>
-                            <img src="/images/external-link.svg" id="ext">
-                        </div>
-                    </div>
-                </div>
-                <div class="work-section-number">
-                    <h3>01</h3>
-                </div>
-            </div>
-            <div class="work-section-card-hori">
-                <div class="work-section-card-hori-res">
-                    <div class="work-section-image-personal">
-                        <img src="/images/personal.png" alt="rizal-pic" id="rizalll">
-                    </div>
-                    <div class="work-section-information">
-                            <h1 class="works-h1">Personal Portfolio</h1>
-                            <p>Welcome to my "Personal Portfolio" website, a showcase of my skills, projects, and creative journey, meticulously crafted using HTML,CSS and little bit JS. This platform serves as a digital reflection of my professional identity, designed to highlight my expertise and unique approach to various fields.
-                            </p>
-                        <div class="work-section-buttons">
-                            <a href="https://portsss.vercel.app/" target="_blank">
-                                Visit Website
-                            </a>
-                            <img src="/images/external-link.svg" id="ext">
-                        </div>
-                    </div>
-                </div>
-                <div class="work-section-number">
-                    <h3>02</h3>
-                </div>
-            </div>
-            <div class="work-section-card-hori">
-                <div class="work-section-card-hori-res">
-                    <div class="work-section-image">
-                        <img src="/images/linktree.png" alt="rizal-pic" id="rizalll">
-                    </div>
-                    <div class="work-section-information">
-                            <h1 class="works-h1">Links Hub</h1>
-                            <p>Welcome to "My Links Hub," an elegant and user-friendly webpage designed to consolidate and share important links that reflect your personal and professional interests. Meticulously crafted using HTML and CSS, this site functions as a versatile platform for showcasing your online presence, including social media profiles, portfolios, and relevant resources.
-                            </p>
-                        <div class="work-section-buttons">
-                            <a href="https://yoytrades.site" target="_blank">
-                                Visit Website
-                            </a>
-                            <img src="/images/external-link.svg" id="ext">
-                        </div>
-                    </div>
-                </div>
-                <div class="work-section-number">
-                    <h3>03</h3>
-                </div>
-            </div>
-        </div>
-    </section> 
-    <!-- work section-->
-    <section class="work_section_graphs">
-        <h3 class="work_h3" id="work_section_link">finished graphics</h3>
-        <h1 class="work_h1" id="work_section_link">Works</h1>
-        <div class="work-section-graphs-body">
-            <div class="work-section-graphs-body-card">
-                <div class="work-section-image-cover">
-                    <img src="/images/pizza clean.jpg" alt="pizza" id="pizzas">
-                </div>
-                <div class="graphs-info">
-                    <h1>Pizza Design Poster</h1>
-                    <a href="/images/pizza clean.jpg" >View Full Image</a>
-                </div>
-            </div>
-            <div class="work-section-graphs-body-card">
-                <div class="work-section-image-cover">
-                    <img src="/images/cosmetics.jpg" alt="pizza" id="pizzas">
-                </div>
-                <div class="graphs-info">
-                    <h1>Cosmetics Design Poster</h1>
-                    <a href="/images/cosmetics.jpg" >View Full Image</a>
-                    
-                </div>
-            </div>
-            <div class="work-section-graphs-body-card">
-                <div class="work-section-image-cover">
-                    <img src="/images/shdoes.jpg" alt="pizza" id="pizzas">
-                </div>
-                <div class="graphs-info">
-                    <h1>Shoes (NIKE) Design Poster</h1>
-                    <a href="/images/shdoes.jpg" >View Full Image</a>
-                </div>
-            </div>
-            <div class="work-section-graphs-body-card">
-                <div class="work-section-image-cover">
-                    <img src="/images/macdoclean.jpg" alt="pizza" id="pizzas">
-                </div>
-                <div class="graphs-info">
-                    <h1>Fast Food (MCDO) Design Poster</h1>
-                    <a href="/images/macdoclean.jpg" >View Full Image</a>
-                </div>
-            </div>
-            <div class="work-section-graphs-body-card">
-                <div class="work-section-image-cover">
-                    <img src="/images/sauce.jpg" alt="pizza" id="pizzas">
-                </div>
-                <div class="graphs-info">
-                    <h1>Hot Sauce Design Poster</h1>
-                    <a href="/images/sauce.jpg" >View Full Image</a>
-                </div>
-            </div>
-            <div class="work-section-graphs-body-card">
-                <div class="work-section-image-cover">
-                    <img src="/images/mock.jpg" alt="pizza" id="pizzas">
-                </div>
-                <div class="graphs-info">
-                    <h1>From Scratch Mock Up</h1>
-                    <a href="/images/mock.jpg" >View Full Image</a>
-                </div>
-            </div>
-            
-        </div>  
-            
-    </section> 
-    <!-- Lets Talk section-->
-    <div class="lets_talk" id="lets_talk">
-        <div class="lets_talk_card">
-            <h3 class="work_h3" id="lets_talk">interested?</h3>
-        <h1 class="work_h1" id="lets_talk">Let's Talk</h1>
-            <div class="lets_talk_card_padding">
-                <form id="contactForm">
-                    <div class="row_1">
-                        <input type="text" class="input_1" id="name" placeholder="First name" required>
-                        <input type="text" class="input_1" id="last" placeholder="Last name" required>
-                    </div>
-                    <div class="row_2">
-                        <input type="email" class="input_2" id="email" placeholder="Email" required>
-                    </div>
-                    <div class="row_3">
-                        <input type="text" class="input_3" id="message" placeholder="Message" required>
-                    </div>
-                    <div class="row_4">
-                        <button type="submit" class="submit" id="submit">Submit</button>
-                    </div>
-                </form>
-            </div>
-        </div>
-        <div class="lets_talk_card_2">
-            <div class="lets_talk_card_padding_2">
-                <div class="lets_talk_card_info">
-                    <h1 class="lets_talk_card_h1">Thank you for visiting my portfolio. I'll get back to you as soon as possible.</h1>
-                </div>
-            </div>
-        </div>    
-    </div> 
-    <script src="script.js"></script>
-    <script type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+.about-yoy {
+    animation: fadeIn 1.5s ease-in-out;
+}
+.yoy-pic {
+    position: relative;
+    transform: translateY(0);
+    transition: transform 0.3s ease-out;
+}
 
-    <script type="text/javascript">
-        emailjs.init('5x_qqKvKTErkS65kA')
-    </script>
-    <!-- footer section--> 
-    <div class="footer">
-        <div class="logo-footer">
-            <h1>yoyfab.</h1>
-            <a href="#">Partner with Me</a>
-        </div>
-        <div class="allright">
-            <p>All Right Reserved © 2025</p>
-        </div>
-        <div class="Icons">
-            <p>fabroayoy00@gmail.com</p>
-            <a href="https://t.me/reohee" target="_blank"><i class="fa-brands fa-telegram"></i> </a>
-            <a href="https://www.instagram.com/yoyie.arts/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-            <i class="fa-brands fa-whatsapp"></i>
-            <a href="https://www.behance.net/yoyf" target="_blank"><i class="fa-brands fa-behance"></i></a>
-            
-        </div>
-    </div>
-</body> 
-</html>
+.container-about:hover .yoy-pic {
+    transform: translateY(-10px);
+}
+
+:root{
+    --main-color: white;
+    --main-font: "Poppins", sans-serif; 
+    --second-font: "Syne", sans-serif;
+    --third-font: "Rubik", serif;
+    --navbar-color: #727272;
+    --background: rgb(22,25,52)
+    
+}
+.marquee{
+    background-color: #000000;
+    cursor: pointer;
+    margin-top: 1rem;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    padding: 0;
+
+  }
+  
+  .marquee .scroll{
+    width: 100%;
+    display: flex;
+  }
+  .marquee .scroll div{
+    color: #ffffff;
+    font-family: var(--second-font);
+    font-size: 90px;
+    white-space: nowrap;
+    font-weight: 500;
+    animation: animate-marquee 80s linear infinite;
+    animation-delay: -40s;
+  }
+  .marquee h3{
+    font-size: 50px;
+    font-family: var(--second-font);
+  }
+  .marquee .scroll div:nth-child(2){
+    animation: animate-marquee-2 80s linear infinite;
+    animation-delay: -80s;
+  }
+  .marquee .scroll div .category{
+    padding: 20px 30px;
+  }
+  .category{
+    color: #ffffff;
+    font-size: 35px;
+    font-weight: 600!important;
+    clear: both;
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    line-height: 20px;
+    font-family: sans-serif;
+  }
+  .category a{color:#252525;text-decoration: none;}
+  
+  /*Responsive marquee*/
+  @media (max-width:767px){
+    .category{font-size: 25px;}
+    .marquee .scroll div{font-size: 25px;}
+  }
+  
+  @keyframes animate-marquee{
+    0%{
+      -moz-transform: translateX(100%);
+      -webkit-transform: translateX(100%);
+      transform: translateX(100%);
+    }
+    100%{
+      -moz-transform: translateX(-100%);
+      -webkit-transform: translateX(-100%);
+      transform: translateX(-100%);
+    }
+  }
+  
+  @keyframes animate-marquee-2{
+    0%{
+      -moz-transform: translateX(0%);
+      -webkit-transform: translateX(0%);
+      transform: translateX(0%);
+    }
+    100%{
+      -moz-transform: translateX(-200%);
+      -webkit-transform: translateX(-200%);
+      transform: translateX(-200%);
+    }
+  }
+
+html {
+    scroll-behavior: smooth;
+}
+section {
+    animation: fadeIn 1s ease-in-out;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: var(--main-font);
+    background-color: #eceee8;
+}
+.white-back{
+    background-color: #eceee8;
+    padding-bottom: 2rem;
+}
+.navbar {
+    max-width: 1240px;
+    margin: 10px auto;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 0px solid rgb(207, 207, 207);
+    border-radius: 50px;
+}
+.text-logo {
+    font-size: 32.44px;
+    font-family: var(--second-font);
+    font-weight: 500;
+    margin-left: 40px;
+}
+.dot {
+    color: red;
+    transition: ease-in-out 0.5s;
+}
+.dot:hover {
+    color: rgb(114, 114, 114);
+}
+.info {
+    font-style: italic;
+    transition: ease-in-out 0.2s;
+    cursor: pointer;
+}
+.info:hover {
+    color: rgb(255, 126, 126);
+}
+.container-menu {
+    display: none;
+    cursor: pointer;
+}
+.menuIcon {
+    display: none;
+}
+.navbar-ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-right: 40px;
+}
+.navbar-ul li {
+    list-style: none;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+.navbar-ul li a {
+    text-decoration: none;
+    font-family: var(--main-font);
+    font-weight: 400;
+    color: #000000;
+    transition: ease-in-out 0.3s;
+    padding: 1rem;
+    font-size: 18px;
+}
+#resume_button{
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    background-color: rgb(58, 58, 58);
+    font-weight: 600;
+    font-size: 16px;
+    font-family: var(--second-font);
+    color: white;
+    transition: ease-in-out 0.3s;
+    border-radius: 25px;
+}
+#resume_button:hover {
+    background-color: rgb(158, 158, 158);
+    color: white;
+}
+.navbar-ul li:nth-child(1) a:hover {
+    background-color: rgb(187, 187, 187);
+    color: #ffffff;
+}
+.navbar-ul li:nth-child(2) a:hover {
+    background-color: rgb(187, 187, 187);
+    color: #ffffff;
+}
+.navbar-ul li:nth-child(3) a:hover {
+    background-color: rgb(58, 58, 58);
+    color: white;
+}
+.mobile-menu {
+    background: #eceee8;
+    position: absolute;
+    left: 0;
+    top: 45px;
+    margin-top: 20px;
+    width: 100%;
+    z-index: 1000;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.5s ease-in-out;
+}
+.mobile-menu.active {
+    max-height: 200px; /* Adjust this value based on the height of your menu */
+}
+.mobile-menu ul {
+    list-style: none;
+    padding: 5px;
+    transition: ease-in-out 0.3s;
+}
+.mobile-menu ul li {
+    padding: 10px;
+}
+.mobile-menu ul a {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+    width: 100%;
+}
+.mobile-menu ul li:hover {
+    color: white;
+    background-color: rgb(177, 177, 177);
+    width: 100%;
+}
+.hero-h1 {
+    display: flex;
+    justify-content: center;
+    max-width: 1240px;
+    margin: 100px auto;
+    align-items: center;
+    text-align: center;
+    min-height: 100px;
+}
+.hero-text {
+    font-family: var(--second-font);
+    font-size: 90px;
+    width: 100%;
+    padding: 0px 16px;
+}
+.hero-highlights {
+    background-color: #f59999; 
+}
+.hero-highlights-blue {
+    transition: ease-in-out 0.2s;
+}
+.hero-highlights-yellow {
+    transition: ease-in-out 0.2s;
+}
+.hero-highlights-blue:hover{
+    background-color: #0277BD;
+    cursor: pointer;
+}
+.hero-highlights-yellow:hover{
+    background-color: #fffb00;
+    cursor: pointer;
+}
+.container-about{
+    position: relative;
+    border-radius: 40px;
+    padding: 2rem 1rem;
+    max-width: 1240px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: flex-start;
+    min-height: 90px;
+    background-color: #19191b;
+    color: #dadada;
+}
+#resume-button{
+   display: inline-block;
+   width: 50%;
+
+}
+#resume-button a{
+    text-decoration: none;
+    color: #000000;
+    text-align: center;
+    padding: 1rem 3rem;
+
+    text-decoration: none;
+    background: #f7f7f7;
+    font-weight: 400;
+    font-size: 16px;
+    margin-top: auto;
+    border-radius: 25px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: ease-in-out 0.3s;
+}
+#resume-button a:hover{
+    background-color: #f59999; /* Darker background on hover */
+    transform: scale(1.05);
+    padding: 1rem 4rem;
+    color: #eceee8;
+
+}
+.resume-info{
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 1rem;
+}
+#resume{
+    
+    color: #000000;
+    transition: ease-in-out 0.5s;
+}
+#about-h1{
+    font-size: 32px;
+}
+.container-about p{
+    font-size: 16px;
+
+}
+.about-info{
+    width: auto;
+    line-height: 30px;
+    font-size: 13px;
+    opacity: 0.8;
+}
+.about-yoy{
+    gap: 1rem;
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    padding: 0rem 2.5rem 0rem 0rem;
+}
+.yoy-pic{
+    position: absolute;
+    right: 0%;
+    top: -20%;
+    z-index: -1;
+    width: 600px;
+    height: auto;
+}
+.yoy-pic-info{
+    height: auto;
+    width: 100%;
+
+}
+.icons{
+    margin-bottom: 24px;
+}
+.icons a{
+    text-decoration: none;
+}
+#github{
+    font-size: 31px;
+    margin-right: 16px;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+    color: #dadada;
+}
+#linkedin{
+    font-size: 31px;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+    color: #dadada;
+    
+}
+#github:hover, #linkedin:hover{
+    color: rgb(95, 95, 95);
+    
+}
+.tech_stack{
+    margin-top: 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 50%;
+}
+.tech_icons{
+    font-size: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    gap: 15px;
+    margin-top: 8px;
+}
+#html{
+    color: #E65100;
+    margin-right: 8px;
+}
+#css{
+    color: #0277BD;
+    
+}
+.work_section{
+    max-width: 1240px;
+    margin: 50px auto;
+    padding: 0px 16px;
+    border-radius: 1rem;
+    padding: 2rem 1rem;
+}
+#graphics-section{
+    max-width: 1240px;
+    margin: 50px auto;
+    padding: 0px 16px;
+}
+#photoshop{
+    width: 70px;
+    height: 70px;
+}
+.work_section_body{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.work_h1{
+    font-size: 70px;
+    font-weight: 100;
+}
+.work_h3{
+    font-size: 30px;
+    font-weight: 200;
+}
+.work_section_card_h1{
+    font-size: 30px;
+
+}
+.work-section-card-hori{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    gap: 2rem;
+    padding: 2rem 0rem;
+    align-items: center;
+    border-top: 1px solid #707070;
+    border-bottom: 1px solid #707070;
+
+}
+.work-section-graphs-body-card img:hover {
+    transform: scale(1.05); /* Slightly enlarge the image on hover */
+    transition: transform 0.3s ease;
+}
+.work-section-card-hori-res{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.work-section-image-links{
+    width: 100%;
+}
+.work-section-image{
+    width: 100%;
+}
+.work-section-information{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.work-section-information p{
+    opacity: 0.8;
+    line-height: 30px;
+    font-size: 1rem;
+    width: 80%;
+}
+.work-section-number h3{
+    font-weight: 300;
+}
+#rizalll{
+    width: 100%;
+}
+.work-section-image-personal{
+    width: 80%;
+}
+.works-h1{
+    font-size: 2rem;
+    font-weight: 400;
+}
+#ext{
+    width: 20px;
+    height: auto;
+    opacity: 0.7;
+}
+.work-section-buttons{
+    display: flex;
+    flex-direction: row;
+
+}
+.work-section-buttons a {
+    text-decoration: none;
+    font-size: 16px;
+    color: #252525;
+    font-weight: 200;
+    transition: ease-in-out 0.2s;
+}
+.work-section-buttons a:hover {
+    color: #f59999;
+}
+.work_section_card{
+    display: flex;
+    flex-direction: column;
+    min-height: 300px;
+    width: 450px;
+    padding: 1.5rem;
+    gap: 1.5rem;
+    justify-content: space-between;
+    box-shadow: 0px 1px 0px 0px rgba(80, 80, 80, 0.5);
+
+}
+.work_section_card_2{
+    display: flex;
+    flex-direction: column;
+    min-height: 300px;
+    width: 450px;
+    padding: 1.5rem;
+    gap: 1.5rem;
+    box-shadow: 0px 1px 0px 0px rgba(80, 80, 80, 0.5);
+
+}
+.work_section_graphs{
+    max-width: 1240px;
+    margin: 50px auto;
+    padding: 0px 16px;
+    border-radius: 1rem;
+    padding: 2rem 1rem;
+    background-color: #f6f6f6;
+}
+.work_section_card_img{
+    box-shadow: 1px 1px 5px rgba(0,0,0,0.5);
+    width: 500px;
+
+}
+.work-section-graphs-body {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+    padding: 1rem;
+}
+
+.work-section-graphs-body-card {
+    border: 1px solid rgb(164, 164, 164);
+    overflow: hidden;
+    border-radius: 30px;
+    padding-bottom: 2rem;
+}
+.work-section-graphs-body-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.work-section-graphs-body-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+.btn, .work-section-buttons a, .graphs-info a {
+    transition: all 0.3s ease;
+}
+
+.graphs-info{
+    color: #000000;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 0rem 1rem;
+}
+.graphs-info h1{
+    font-size: 30px;
+    font-weight: 250;
+}
+.graphs-info a{
+    font-size: 16px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-weight: 200;
+    
+    
+    border-bottom: 1px solid #19191b;
+    
+    width: 130px;
+    transition: ease-in-out 0.3s;
+}
+.graphs-info a:hover{
+    color: rgb(0, 0, 0);
+    background-color: #f59999;
+    
+
+}
+.work-section-image-cover{
+    width: 100%;
+    height: auto;
+    border-radius: 10px 10px 0 0;
+   
+    
+}
+
+#pizzas{
+    width: 100%;
+    
+}
+.rizal_pic{
+    width: 100%; /* Stretch the image to fit the div's width */
+    height: auto; /* Maintain the aspect ratio */
+}
+.rizal_info{
+    margin-top: 16px;
+    display: flex;
+    flex-direction: column;
+    line-height: 30px;
+    opacity: 0.8;
+}
+.rizal_info h5{
+    opacity: 0.5;
+}
+.personal_info{
+    margin-top: 16px;
+    opacity: 0.8;
+    line-height: 30px;
+}
+.work_section_card_text{
+    width: 100%;
+    flex-grow: 1;
+}
+.work_section_card_button button{
+    padding: 15px 15px;
+    cursor: pointer;
+    background-color: #263238;
+    border: none;
+    color: #ffffff;
+    transition: 0.4s ease-in-out;
+    margin-right: 16px;
+    text-decoration: none;
+}
+.work_section_card_button a{
+    text-decoration: none;
+}
+.work_section_card_button button:hover{
+    background-color: rgb(177, 177, 177);
+}
+.work_section_card_button #live_green:hover{
+    background-color: green;
+
+}
+.graphics_section_card_button button{
+    padding: 15px 15px;
+    cursor: pointer;
+    background-color: #480331;
+    border: none;
+    color: #ffffff;
+    transition: 0.4s ease-in-out;
+    margin-right: 16px;
+    text-decoration: none;
+}
+.graphics_section_card_button a{
+    text-decoration: none;
+}
+.graphics_section_card_button button:hover{
+    background-color: rgb(177, 177, 177);
+}
+.graphics_section_card_button #live_green:hover{
+    background-color: green;
+
+}
+.lets_talk{
+    max-width: 1240px;
+    margin: 50px auto;
+    padding: 0px 16px;
+    display: flex;
+    flex-direction: space-between;
+    gap: 1.5rem;
+    padding: 0px 16px;
+}
+.lets_talk_card{
+    width: 100%;
+    gap: 1.5rem;
+    display: flex;
+    flex-direction: column;
+
+}
+.lets_talk_card_padding{
+    border-right: 1px solid #ccc;
+    padding-right: 6rem;
+
+
+}
+.lets_talk_card_h1{
+    font-weight: 400;
+
+}
+.row_1{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+    width: 100%;
+}
+.row_1 input{
+    padding: 0.5rem;
+    border: none;
+    outline: none;
+    font-family: var(--main-font);
+
+}
+.row_2{
+    margin-top: 16px;
+
+}
+.row_2 input{
+    padding: 0.5rem;
+    border: none;
+    outline: none;
+    width: 100%;
+    font-family: var(--main-font);
+}
+.row_3{
+    margin-top: 16px;
+ 
+
+}
+.row_3 input{
+    font-family: var(--main-font);
+    border: none;
+    padding: 0.5rem;
+    outline: none;
+    width: 100%;
+    background-color: #fefefe;
+    height: 20vh;
+
+}
+.row_4{
+    margin-top: 16px;
+}
+.row_4 button{
+    cursor: pointer;
+    font-family: var(--main-font);
+    font-size: 16px;
+    font-weight: 300;
+    color: #fdfdfd;
+    background-color: #333333;
+    border: .0625rem solid rgb(255, 255, 255);
+    padding: .75rem 2.2rem;
+    border-radius: 3.75rem;
+    transition: 0.4s ease-in-out;
+    margin-right: 16px;
+    text-decoration: none;
+    transition: 0.2s ease-in-out;
+}
+.row_4 button:hover{
+    background-color: #f59999
+}
+.lets_talk_card_2{
+    display: flex;
+    align-items: center;
+    padding: 1.5rem;
+}
+.lets_talk_card_padding_2{
+    padding-left: 5rem;
+}
+.lets_talk_card_info{
+    width: 90%;
+}
+.footer{
+    color: #fefefe;
+    text-align: center;
+    font-family: var(--main-font);
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    gap: 2px;
+    padding: 3rem 2rem;
+    background-color: #000000;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+}
+.logo-footer{
+    display: flex;
+    gap: 2rem;
+    flex-direction: row;
+    align-items: center;
+}
+.logo-footer a {
+    text-decoration: none;
+    color: #fdfdfd;
+    border: .0625rem solid rgb(255, 255, 255);
+    padding: .75rem 1.2rem;
+    border-radius: 3.75rem;
+    transition: ease-in-out 0.3s;
+}
+.logo-footer h1{
+    font-weight: 400;
+}
+.logo-footer a:hover{
+    background-color: #f59999;
+    border: 1px solid #f59999;
+    color: rgb(2, 2, 2);
+}
+.footer_h1{
+    font-size: 15px;
+    font-weight: 200;
+}
+.Icons{
+    display: flex;
+    gap: 2rem;
+    flex-direction: row;
+    cursor: pointer;
+}
+.Icons i {
+    font-size: 1.2rem;
+    transition: ease-in-out 0.3s;
+    text-decoration: none;
+    color: white;
+}
+.Icons i:hover{
+    color: rgb(108, 108, 108);
+}
+.footer {
+    transition: background-color 0.5s ease;
+}
+/* See More Button */
+/* See More Button */
+.see-more-button {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.see-more-button button {
+    background-color: #f59999; /* Soft pink background */
+    color: #ffffff; /* Dark text for contrast */
+    border: none;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif; /* Poppins font */
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.see-more-button button:hover {
+    background-color: #e58a8a; /* Slightly darker pink on hover */
+    transform: translateY(-2px); /* Slight lift effect */
+}
+
+.see-more-button button:active {
+    transform: translateY(0); /* Reset lift effect on click */
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+    .see-more-button button {
+        padding: 10px 20px; /* Smaller padding for smaller screens */
+        font-size: 14px; /* Smaller font size for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .see-more-button button {
+        padding: 8px 16px; /* Even smaller padding for mobile screens */
+        font-size: 12px; /* Smaller font size for mobile screens */
+    }
+}
+@media screen and (max-width: 974px) {
+    .hero-text {
+        font-size: 55px;
+        margin: 1rem;
+    }
+    .navbar {
+        margin-right: 110px;
+    }
+    .about-yoy{
+        padding: 0rem;
+    }
+    .container-about{
+        position: static;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column-reverse;
+        text-align: center;
+
+    }
+    .container-about::before {
+        content: ""; /* Required for pseudo-elements */
+        position: absolute; /* Position it absolutely within the container */
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-image: url(images/yoy.png); /* Use the same background image */
+        background-repeat: no-repeat;
+        background-size: cover; /* Ensure the image covers the entire area */
+        opacity: 0.2; /* Adjust this value for desired opacity (0.0 to 1.0) */
+        z-index: 0; /* Place it behind the text */
+    }
+    
+    .container-about > * {
+        position: relative; /* Ensure text is above the pseudo-element */
+        z-index: 1; /* Bring text above the background */
+    }
+    .work-section-information p {
+        width: 100%;
+    }
+    .work-section-card-hori-res{
+        display: flex;
+        flex-direction: column;
+
+    }
+    .work-section-card-hori{
+        display: flex;
+        align-items: flex-start;
+    }
+    .work-section-image-personal{
+        width: 100%;
+    }
+    .yoy-pic{
+        display: none;
+    }
+    .yoy-pic-info{
+        margin-top: 2rem;
+        width: 70%;
+        padding-bottom: 16px;
+
+    }
+    .about-info{
+        width: auto;
+        
+    }
+    .about-yoy{
+        margin: 0px;
+        width: 90%;
+    }
+    .resume-info{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        padding: 16px;
+    }
+    #about-h1{
+        font-size: 35px;
+        margin: 0px;
+        border-bottom: 1px solid #263238;
+        padding-bottom: 8px;
+    }
+    .tech_h1{
+        font-size: 35px;
+    }
+    .tech_stack{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+    .work_section{
+        display: flex;
+
+        flex-direction: column;
+        justify-content: center;
+    }
+    .work_section_body{
+        display: flex;
+        justify-content: center;
+    }
+    .work_section_card, .work_section_card_2{
+        margin-top: 24px;
+        width: 100%;
+    }
+    .work_section_card_img {
+        box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+        overflow: hidden;
+        width: 100%;
+    }
+    .lets_talk{
+        display: flex;
+        flex-direction: column;
+        padding: 16px;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .lets_talk_card_padding{
+        border-right: none;
+    }
+    .lets_talk_card_2{
+        width: 100%;
+    }
+    .lets_talk_card_padding_2{
+        padding-left: 0;
+    }
+    .lets_talk_card_info{
+        text-align: center;
+    }
+    #resume-button{
+        position: static;
+    }
+}
+@media screen and (max-width: 541px) {
+    .navbar-ul {
+        display: none;
+    }
+    .navbar {
+        padding: 6.5px;
+        border: none;
+    }
+    .text-logo {
+        font-size: 22.44px;
+    }
+    .container-menu {
+        display: block;
+        visibility: visible;
+        margin-right: 20px;
+    }
+    .mobile-menu {
+        top: 31px;
+    }
+    .mobile-menu-ul li a{
+        font-size: 18px;
+        margin-left: 30px;
+        
+    }
+    .footer h1{
+        font-size: 14px;
+    }
+    .mobile ul li button{
+        color: white;
+    }
+    #resume{
+        color: white
+    }
+    .work_h1 {
+        font-size: 50px;
+        font-weight: 100;
+    }
+}
+@media screen and (max-width: 793px) {
+    .footer {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+}
+@media screen and (max-width: 592px) {
+    .work-section-information p{
+        font-size: 14px;
+
+    }
+    .work-section-buttons a{
+        font-size: 14px;
+
+    }
+    .work-section-number h3{
+        font-family: 14px;
+    }
+    .graphs-info a {
+        font-size: 14px;
+    }
+    .work_h3{
+        font-size: 25px;
+    }
+    #resume-button a{
+        font-size: 14px;
+        padding: 0.5rem 2rem;
+    }
+    #github{
+        font-size: 25px;
+    }
+    #linkedin{
+        font-size: 25px;
+    }
+    .hero-h1 {
+        margin: 50px auto;
+    }
+    .hero-text {
+        font-size: 40px;
+        width: 70%;
+        line-height: 3rem;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        padding: 0px;
+    }
+    #dot{
+        display: none;
+    }
+    .container-about p{
+        font-size: 14px;
+    }
+    .yoy-pic-info{
+        width: 70%;
+        margin: 0 auto;
+    }
+    .rizal_info , .personal_info{
+        font-size: 14px;
+    }
+}
+@media screen and (max-width: 531px) {
+    .row_1 input{
+        width: 100%;
+    }
+    .lets_talk_card_padding{
+        padding: 0;
+    }
+
+
+
+@media screen and (max-width: 475px) {
+    .work_section_card_img{
+        width: 100%;
+    }
+    .work-section-card-hori {
+        display: flex;
+        gap: 0.5rem;
+    }
+    .work-section-number h3{
+        font-weight: 200;
+    }
+}
+@media screen and (max-width: 364px) {
+    .container-about p{
+        line-height: 21px;
+        width: 100%;
+    }
+    .hero-h1 {
+        margin: 40px auto;
+    }
+    .hero-text {
+        font-size: 34px;
+        line-height: 3rem;
+    }
+    .hero-h1 {
+        margin: 20px 10px;
+    }
+    .yoy-pic-info{
+        width: 75%;
+        margin: 0 auto;
+    }
+    .footer h1{
+        font-size: 12px;
+    }
+    
+}
+}
