@@ -207,7 +207,7 @@ body {
 .navbar-ul li a {
     text-decoration: none;
     font-family: var(--main-font);
-    font-weight: 400;
+    font-weight: 300;
     color: #000000;
     transition: ease-in-out 0.3s;
     padding: 1rem;
@@ -622,18 +622,15 @@ body {
     text-decoration: none;
     color: rgb(0, 0, 0);
     font-weight: 200;
-    
-    
+
     border-bottom: 1px solid #19191b;
-    
     width: 130px;
     transition: ease-in-out 0.3s;
 }
 .graphs-info a:hover{
-    color: rgb(0, 0, 0);
-    background-color: #f59999;
+    color: #e58a8a;
+    border-bottom: 1px solid #e58a8a;
     
-
 }
 .work-section-image-cover{
     width: 100%;
