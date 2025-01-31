@@ -591,6 +591,7 @@ body {
 .work-section-graphs-body-card {
     border: 1px solid rgb(212 212 212);
     overflow: hidden;
+    border-radius: 30px;
     padding-bottom: 2rem;
 }
 .work-section-graphs-body-card {
@@ -1185,6 +1186,11 @@ body {
     .footer h1{
         font-size: 12px;
     }
+    .work-section-graphs-body {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 2rem;
+        padding: 1rem;
     
 }
 }
