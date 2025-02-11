@@ -706,6 +706,61 @@ body {
     background-color: green;
 
 }
+/* Services Section */
+.services_section {
+    max-width: 1240px;
+    margin: 50px auto;
+    padding: 0px 16px;
+    border-radius: 1rem;
+    padding: 2rem 1rem;
+    background-color: #f6f6f6;
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 10%;
+}
+
+.services-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.service-card {
+    background-color: var(--main-color);
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    flex: 1;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.service-icon {
+    font-size: 50px;
+    color: #f59999;
+    margin-bottom: 1rem;
+}
+
+.service-title {
+    font-family: var(--second-font);
+    font-size: 28px;
+    font-weight: 500;
+    color: #19191b;
+    margin-bottom: 1rem;
+}
+
+.service-description {
+    font-family: var(--main-font);
+    font-size: 16px;
+    color: #727272;
+    line-height: 1.6;
+}
 .lets_talk{
     max-width: 1240px;
     margin: 50px auto;
@@ -1050,6 +1105,15 @@ body {
         position: static;
     }
 }
+@media (max-width: 768px) {
+    .services-container {
+        flex-direction: column;
+    }
+
+    .service-card {
+        width: 100%;
+    }
+}
 @media screen and (max-width: 541px) {
     .navbar-ul {
         display: none;
@@ -1089,13 +1153,51 @@ body {
     }
 }
 @media screen and (max-width: 793px) {
+    
     .footer {
         display: flex;
         flex-direction: column;
         gap: 2rem;
     }
+    .navbar-ul {
+        display: none;
+    }
+    .navbar {
+        padding: 6.5px;
+        border: none;
+    }
+    .text-logo {
+        font-size: 22.44px;
+    }
+    .container-menu {
+        display: block;
+        visibility: visible;
+        margin-right: 20px;
+    }
+    .mobile-menu {
+        top: 31px;
+    }
+    .mobile-menu-ul li a{
+        font-size: 18px;
+        margin-left: 30px;
+        
+    }
+    .footer h1{
+        font-size: 14px;
+    }
+    .mobile ul li button{
+        color: white;
+    }
+    #resume{
+        color: white
+    }
+    .work_h1 {
+        font-size: 50px;
+        font-weight: 100;
+    }
 }
 @media screen and (max-width: 592px) {
+    
     .work-section-information p{
         font-size: 14px;
 
@@ -1140,6 +1242,8 @@ body {
     }
     .container-about p{
         font-size: 14px;
+        text-align: center;
+        width: 100%;
     }
     .yoy-pic-info{
         width: 70%;
