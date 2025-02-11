@@ -246,7 +246,6 @@ body {
     position: absolute;
     left: 0;
     top: 45px;
-    margin-top: 20px;
     width: 100%;
     z-index: 1000;
     overflow: hidden;
@@ -1153,7 +1152,37 @@ body {
     }
 }
 @media screen and (max-width: 793px) {
-    
+    /* Fixed Navbar for Smaller Screens */
+@media screen and (max-width: 793px) {
+    .navbar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1000;
+        background-color: rgba(236, 238, 232, 0.9); /* Semi-transparent background */
+        backdrop-filter: blur(10px); /* Blur effect */
+        padding: 10px 20px; /* Adjust padding for smaller screens */
+        margin: 0; /* Remove default margin */
+        border-radius: 0; /* Remove rounded corners */
+    }
+
+    /* Blur effect on body when navbar is fixed */
+    body.navbar-active {
+        overflow: hidden; /* Prevent scrolling */
+    }
+
+    body.navbar-active::before {
+        content: '';
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        backdrop-filter: blur(20px); /* Blur effect */
+        z-index: 999; /* Ensure it's below the navbar */
+    }
+}
     .footer {
         display: flex;
         flex-direction: column;
@@ -1286,9 +1315,6 @@ body {
     .hero-text {
         font-size: 34px;
         line-height: 3rem;
-    }
-    .hero-h1 {
-        margin: 20px 10px;
     }
     .yoy-pic-info{
         width: 75%;
