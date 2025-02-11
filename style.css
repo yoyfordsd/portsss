@@ -728,6 +728,12 @@ body {
 
 
 }
+#email-me{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    border: 0 1px 0 0 solid #19191b;
+}
 .lets_talk_card_h1{
     font-weight: 400;
 
@@ -798,6 +804,7 @@ body {
     display: flex;
     align-items: center;
     padding: 1.5rem;
+    border: 1px solid #19191b;
 }
 .lets_talk_card_padding_2{
     padding-left: 5rem;
@@ -848,7 +855,7 @@ body {
 }
 .Icons{
     display: flex;
-    gap: 2rem;
+    gap: 1rem;
     flex-direction: row;
     cursor: pointer;
 }
@@ -1191,6 +1198,10 @@ body {
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
         gap: 2rem;
         padding: 1rem;
+    }
+    .lets_talk_card_2 {
+        padding: 0px;
+    }
     
 }
 }
