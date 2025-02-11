@@ -242,15 +242,19 @@ body {
     color: white;
 }
 .mobile-menu {
-    background: #eceee8;
+    background-color: rgba(236, 238, 232, 0.9); /* Semi-transparent background */
+    backdrop-filter: blur(10px); /* Blur effect */ /* Rounded corners */
+    margin-top: 8.8px; /* Add some margin */
     position: absolute;
-    left: 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    left: 0px;
     top: 45px;
     width: 100%;
     z-index: 1000;
     overflow: hidden;
     max-height: 0;
     transition: max-height 0.5s ease-in-out;
+    
 }
 .mobile-menu.active {
     max-height: 200px; /* Adjust this value based on the height of your menu */
@@ -1161,7 +1165,7 @@ body {
         width: 100%;
         z-index: 1000;
         background-color: rgba(236, 238, 232, 0.9); /* Semi-transparent background */
-        backdrop-filter: blur(10px); /* Blur effect */
+        backdrop-filter: blur(20px); /* Blur effect */
         padding: 10px 20px; /* Adjust padding for smaller screens */
         margin: 0; /* Remove default margin */
         border-radius: 0; /* Remove rounded corners */
