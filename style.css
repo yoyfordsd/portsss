@@ -5,6 +5,7 @@
     font-family: "custom1";
     src: url(/fonts2/HelveticaNeueCyr\ Light.ttf);
 }
+
 .hero-text span {
     display: inline-block;
     animation: float 3s ease-in-out infinite;
@@ -304,11 +305,11 @@ body {
 }
 .hero-highlights-blue:hover{
     background-color: #0277BD;
-    cursor: url(/images/type.gif), auto;
+    cursor: url(/images/bling.gif), auto;
 }
 .hero-highlights-yellow:hover{
     background-color: #fffb00;
-    cursor: url(/images/draw.gif), auto;
+    cursor: url(images/yellow.png),auto;
 }
 .container-about{
     position: relative;
@@ -709,7 +710,22 @@ body {
     background-color: green;
 
 }
-/* Services Section */
+#art-gallery{
+    color: #ffffff;
+    flex-direction: column;
+    padding: 1rem;
+    text-align: center;
+
+}
+#art-black{
+    background-color: #19191b;
+}
+#art-gallery h1{
+    color: #ffffff;
+}
+.art-h1{
+    width: 100%;
+}
 /* Services Section */
 .services_section {
     max-width: 1240px;
