@@ -304,11 +304,11 @@ body {
 }
 .hero-highlights-blue:hover{
     background-color: #0277BD;
-    cursor: pointer;
+    cursor: url(/images/type.gif), auto;
 }
 .hero-highlights-yellow:hover{
     background-color: #fffb00;
-    cursor: pointer;
+    cursor: url(/images/draw.gif), auto;
 }
 .container-about{
     position: relative;
@@ -747,15 +747,15 @@ body {
 
 /* Custom Cursors for Each Service Card */
 .service-card:nth-child(1):hover {
-    cursor: url('path/to/web-design-cursor.png'), auto; /* Custom cursor for Web Designing */
+    cursor: url('/images/black.png'), auto; /* Custom cursor for Web Designing */
 }
 
 .service-card:nth-child(2):hover {
-    cursor: url('path/to/graphics-design-cursor.png'), auto; /* Custom cursor for Graphics Designing */
+    cursor: url('/images/pink.png'), auto; /* Custom cursor for Graphics Designing */
 }
 
 .service-card:nth-child(3):hover {
-    cursor: url('path/to/customer-service-cursor.png'), auto; /* Custom cursor for Customer Service */
+    cursor: url('/images/yellow.png'), auto; /* Custom cursor for Customer Service */
 }
 
 .service-icon {
@@ -777,17 +777,7 @@ body {
     font-size: 16px;
     color: #727272;
     line-height: 1.6;
-}
-.service-card:nth-child(1):hover {
-    cursor: pointer; /* Pointer cursor for Web Designing */
-}
 
-.service-card:nth-child(2):hover {
-    cursor: crosshair; /* Crosshair cursor for Graphics Designing */
-}
-
-.service-card:nth-child(3):hover {
-    cursor: help; /* Help cursor for Customer Service */
 }
 .lets_talk{
     max-width: 1240px;
