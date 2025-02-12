@@ -243,7 +243,7 @@ body {
 }
 .mobile-menu {
     background-color: rgba(236, 238, 232, 0.9); /* Semi-transparent background */
-    backdrop-filter: blur(10px); /* Blur effect */ /* Rounded corners */
+    backdrop-filter: invert(1) blur(10px); /* Negative filter with blur  /* Blur effect */ /* Rounded corners */
     margin-top: 8.8px; /* Add some margin */
     position: absolute;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
@@ -710,6 +710,7 @@ body {
 
 }
 /* Services Section */
+/* Services Section */
 .services_section {
     max-width: 1240px;
     margin: 50px auto;
@@ -744,6 +745,19 @@ body {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
+/* Custom Cursors for Each Service Card */
+.service-card:nth-child(1):hover {
+    cursor: url('path/to/web-design-cursor.png'), auto; /* Custom cursor for Web Designing */
+}
+
+.service-card:nth-child(2):hover {
+    cursor: url('path/to/graphics-design-cursor.png'), auto; /* Custom cursor for Graphics Designing */
+}
+
+.service-card:nth-child(3):hover {
+    cursor: url('path/to/customer-service-cursor.png'), auto; /* Custom cursor for Customer Service */
+}
+
 .service-icon {
     font-size: 50px;
     color: #f59999;
@@ -763,6 +777,17 @@ body {
     font-size: 16px;
     color: #727272;
     line-height: 1.6;
+}
+.service-card:nth-child(1):hover {
+    cursor: pointer; /* Pointer cursor for Web Designing */
+}
+
+.service-card:nth-child(2):hover {
+    cursor: crosshair; /* Crosshair cursor for Graphics Designing */
+}
+
+.service-card:nth-child(3):hover {
+    cursor: help; /* Help cursor for Customer Service */
 }
 .lets_talk{
     max-width: 1240px;
@@ -1155,8 +1180,7 @@ body {
         font-weight: 100;
     }
 }
-@media screen and (max-width: 793px) {
-    /* Fixed Navbar for Smaller Screens */
+ /* Fixed Navbar for Smaller Screens */
 @media screen and (max-width: 793px) {
     .navbar {
         position: fixed;
@@ -1186,7 +1210,7 @@ body {
         backdrop-filter: blur(20px); /* Blur effect */
         z-index: 999; /* Ensure it's below the navbar */
     }
-}
+
     .footer {
         display: flex;
         flex-direction: column;
